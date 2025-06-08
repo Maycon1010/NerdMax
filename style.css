@@ -1,0 +1,279 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #ffffff;
+  margin: 0;
+}
+
+header {
+  background: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #cccccc;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+.signin-btn {
+  background: #00aaff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Área de destaque */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #0c0c0c;
+}
+
+.product-section h2 {
+  text-align: center;
+  color: #00aaff;
+}
+
+.product-section {
+  padding: 40px 20px;
+  background: #1c1c1c;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.product-grid { 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+.product-card {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 30px;
+  width: 250px;
+  min-width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.336);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.616);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+.product-card a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  border: 1px solid #444;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  background: #1c1c1c;
+  box-shadow: 0px 0px 10px rgba(0, 170, 255, 0.2);
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: 1px solid #555;
+  background: #2b2b2b;
+  color: white;
+}
+
+.login-btn {
+  background: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background: #1c1c1c;
+}
+
+.search-form {
+  margin-right: 10px;
+}
+
+.search-form input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #444;
+  background: #2b2b2b;
+  color: white;
+  outline: none;
+}
+
+.produto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  background: #1c1c1c;
+  color: white;
+  gap: 40px;
+}
+
+.produto-imagem {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.produto-imagem img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.3);
+}
+
+.produto-info {
+  flex: 2 1 500px;
+  max-width: 600px;
+}
+
+.produto-info h1 {
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+.produto-info h3 {
+  margin-top: 30px;
+  color: #00ddff;
+}
+
+.produto-info ul {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.produto-info p {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.compra-box {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
+}
+
+.compra-box h2 {
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.compra-box .login-btn {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+  .produto-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .compra-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.social-icons {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1); /* torna os ícones brancos para o fundo escuro */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  filter: invert(45%) sepia(100%) saturate(300%) hue-rotate(180deg); /* efeito hover colorido */
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 6px;
+  background: #2b2b2b;
+  border: 1px solid #555;
+  border-radius: 10px;
+  color: white;
+}
+
+.preview-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#profile-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00aaff;
+  background: #2b2b2b;
+}
+

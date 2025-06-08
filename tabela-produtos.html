@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela de Produtos - NerdMax</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00aaff;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #1f1f1f;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: center;
+      border: 1px solid #333;
+    }
+
+    th {
+      background-color: #00aaff;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+
+    tr:hover {
+      background-color: #333;
+    }
+
+    .disponivel {
+      color: #00ff99;
+      font-weight: bold;
+    }
+
+    .esgotado {
+      color: #ff4444;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Nerd<span style="color:#00aaff;">Max</span></a>
+    </header>
+  <h1>Produtos em Estoque - NerdMax</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Categoria</th>
+        <th>Marca</th>
+        <th>Varejo (R$)</th>
+        <th>Atacado (R$)</th>
+        <th>Estoque</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Notebook Gamer XPro</td>
+        <td>Notebook</td>
+        <td>StormTech</td>
+        <td>8.999,00</td>
+        <td>8.399,00</td>
+        <td>12</td>
+        <td class="disponivel">Disponível</td>
+      </tr>
+      <tr>
+        <td>Mouse RGB Hyperspeed</td>
+        <td>Mouse</td>
+        <td>HyperGear</td>
+        <td>299,00</td>
+        <td>259,00</td>
+        <td>34</td>
+        <td class="disponivel">Disponível</td>
+      </tr>
+      <tr>
+        <td>Teclado Mecânico ProKey</td>
+        <td>Teclado</td>
+        <td>KeyForce</td>
+        <td>399,00</td>
+        <td>359,00</td>
+        <td>0</td>
+        <td class="esgotado">Esgotado</td>
+      </tr>
+      <tr>
+        <td>Headset StormSound 7.1</td>
+        <td>Áudio</td>
+        <td>SoundPeak</td>
+        <td>499,00</td>
+        <td>449,00</td>
+        <td>15</td>
+        <td class="disponivel">Disponível</td>
+      </tr>
+      <tr>
+        <td>Webcam Ultra HD 4K</td>
+        <td>Acessório</td>
+        <td>VisualMax</td>
+        <td>699,00</td>
+        <td>639,00</td>
+        <td>6</td>
+        <td class="disponivel">Disponível</td>
+      </tr>
+    </tbody>
+  </table>
+ 
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/" target="_blank" title="YouTube">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank" title="TikTok">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+      </a>
+    </div>
+    <p>&copy; 2025 NerdMax. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

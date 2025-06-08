@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - NerdMax</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-body">
+  <header>
+    <a href="index.html" class="logo">Nerd<span style="color:#00aaff;">Max</span></a>
+  </header>
+
+  <div class="login-box">
+    <h2>Cadastro</h2>
+    <form>
+      <!-- Pré-visualização da imagem -->
+      <div class="preview-wrapper">
+        <img id="profile-preview" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Foto de perfil">
+      </div>
+      
+      <!-- Upload de foto -->
+      <label style="display: block; text-align: left; margin: 10px 0 5px;">Foto de perfil:</label>
+      <input type="file" accept="image/*" onchange="previewImage(event)" style="margin-bottom: 15px;"><br>
+    
+      <input type="text" placeholder="Nome completo" required><br>
+      <input type="text" placeholder="Usuário" required><br>
+      <input type="password" placeholder="Senha" required><br>
+      <input type="email" placeholder="E-mail" required><br>
+      <input type="tel" placeholder="Número de telefone" pattern="\\([0-9]{2}\\) [0-9]{5}-[0-9]{4}" title="Formato: (99) 99999-9999"><br><br>
+    
+      <button type="submit" class="login-btn">Cadastrar</button>
+    </form>
+    
+    <p style="margin-top: 15px; font-size: 14px;">
+      Já tem uma conta? <a href="login.html" style="color: #00aaff;">Entrar</a>
+    </p>
+    
+  </div>
+  
+  <script>
+    function previewImage(event) {
+      const preview = document.getElementById('profile-preview');
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = () => {
+          preview.src = reader.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/" target="_blank" title="YouTube">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank" title="TikTok">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+      </a>
+    </div>
+    <p>&copy; 2025 NerdMax. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
